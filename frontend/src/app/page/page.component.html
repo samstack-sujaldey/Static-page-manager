@@ -1,0 +1,19 @@
+<div class="min-h-screen bg-gray-100 py-12">
+  <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-10">
+    @if (pageData) {
+      <h1 class="text-4xl font-bold mb-8">
+        {{ pageData.title }}
+      </h1>
+
+      <div class="prose max-w-none whitespace-pre-wrap">
+        {{ pageData.content }}
+      </div>
+    } @else {
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-red-600">404</h1>
+
+        <p class="text-gray-500 mt-4">Page not found.</p>
+      </div>
+    }
+  </div>
+</div>
